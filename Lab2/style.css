@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+
+.title{
+
+    background-color: cornflowerblue;
+    color: white;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.margin{
+    margin:5px;
+}
