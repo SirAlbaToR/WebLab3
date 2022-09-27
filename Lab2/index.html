@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="with=device-with, initial-scale=1.0">
+        <title>Форма обратной связи</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+    <main>
+       <div class="title">
+        <header class="title">Форма обратной связи</header>
+    </div>
+       <form method="POST" action="http://httpbin.org/post" enctype="multipart/form-data">    
+
+        <div class="margin">
+            <label for="login">Логин</label>
+            <input type="text" name="login" id="login" placeholder="Введите логин">
+        </div>
+        <div class="margin">
+            <label for="pass">Пароль</label>
+            <input type="text" name="pass" id="pass" placeholder="Введите пароль">
+        </div>
+        
+        <div class="margin">
+            <input type="checkbox" name="rememberme" id="rememberme" required value="true">
+            <label for="rememberme">Запомнить меня</label>
+        </div>
+    
+
+        <input type="hidden" name="user_id" value="1">
+
+        <div class="margin">
+            <label for="fio">ФИО</label>
+            <input type="text" name="fio" id="fio" placeholder="Введите ФИО">
+        </div>
+        <div class="margin">
+            <label for="email">Электронная почта</label>
+            <input type="email" name="email" id="email" value="gg@gmail.com" required>
+        </div>
+        <fieldset>
+            <legend>Откуда вы узнали</legend>
+        
+            <div>
+              <input type="radio" id="friends" name="sourse" value="friends">
+              <label for="friends">Рассказали друзья</label>
+            </div>
+        
+            <div>
+              <input type="radio" id="internet" name="sourse" value="internet" checked>
+              <label for="internet">Реклама в интернете</label>
+            </div>
+        
+        </fieldset>
+        
+        <div class="margin">
+            <label for="category">Категория обращения</label>
+            <select name="category_id" id="category">
+                <option value="1">Жалоба</option>
+                <option value="2" selected>Предложение</option>
+            </select>
+        </div>
+        <div class="margin">
+            <label for="msg">Текст сообщения</label>
+            <textarea name="msg" id="msg" cols="30" rows="10" required placeholder="Введите сообщение"></textarea>
+        </div>
+
+        <div class="margin">
+            <input type="checkbox" name="agrement" id="agrement" required value="true">
+            <label for="agrement">Согласен с обработкой персональных данных</label>
+        </div>
+
+        <div class="margin">
+            <label for="attachment">Вложение</label>
+            <input type="file" name="attachment" id="attachment">
+        </div>
+
+        <button type="submit" class="margin">Отправить</button>
+       </form>
+    </main>
+    </body>
+</html>
