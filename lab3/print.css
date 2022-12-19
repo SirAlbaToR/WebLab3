@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    background: url(images/back.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.info{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.info div{
+    color: black;
+}
+
+.sidebar{
+    display: none;
+}
+
+.container{
+    display: none;
+}
+
+.container a{
+    display: none;
+}
